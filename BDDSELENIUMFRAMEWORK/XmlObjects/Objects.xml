@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<elements>
+<LoginPageObjects>
+	<username locator="id" value="txtUsername"/>
+	<password locator="id" value="txtPassword"/>
+	<loginButton locator="id" value="btnLogin"/>
+</LoginPageObjects>
+
+
+<HomePageObjects>
+	<welcomeButton locator="xpath"	value="//A[@id='welcome']"/>
+	<LogoutButton locator="xpath"	value="//A[text()='Logout']"/>
+	<mip locator="xpath" value="//*[contains(@id,\'menu_pim_viewPimModule\')]"/>
+	<PIM locator="xpath"	value="//B[text()='PIM']"/>
+		
+</HomePageObjects>
+<AddEmployeePage>
+<AddEmployee locator="xpath"	value="//A[@id='menu_pim_addEmployee']"/>
+	<FirstName locator="xpath"		value="//INPUT[@id='firstName']"/>
+	<LastName locator="xpath"		value="//INPUT[@id='lastName']"/>
+	<LogincredentialBUtton locator="xpath"	value="//*[contains(text(),'Create Login Details')]"/>
+	<SaveButton locator="xpath"		value="//INPUT[@id='btnSave']"/>
+	<Repassword locator="xpath"		value="//INPUT[@id='re_password']"/>
+	<Password locator="xpath"		value="//INPUT[@id='user_password']"/>
+	<Username locator="xpath"		value="//INPUT[@id='user_name']"/>
+</AddEmployeePage>
+<DeleteEmployeePage>
+	<EmployeeList	locator="xpath"		value="//*[contains(text(),'Employee List')]"/>
+	<SearchExitsEmployeeName locator="xpath"	value="//INPUT[@id='empsearch_employee_name_empName']"/>
+	<SearchButton locator="xpath"	value="//INPUT[@id='searchBtn']"/>
+	<DelectCheckBox locator="xpath"	value="//*[contains(@name,'chkSelectRow[]')]"/>
+	<FristNamevalidate locator="xpath"	value="(//TD[@class='left'])[2]"/>
+	<DeleteButton locator="xpath"	value="//INPUT[@id='btnDelete']"/>
+	<DeleteDialoguBox locator="xpath"	value="//INPUT[@id='dialogDeleteBtn']"/>
+	
+
+
+</DeleteEmployeePage>
+	
+</elements>
+

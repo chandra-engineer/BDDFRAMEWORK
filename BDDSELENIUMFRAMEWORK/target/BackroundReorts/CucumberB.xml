@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="57.555349">
+<testcase classname="Add Employee and Delete Same Employee" name="Add Employee in Employee list" time="27.500986">
+<system-out><![CDATA[Given OrangeHrm application Should launch with Chrome browser "chrome" and Url "http://orangehrm.simplifyqa.com:9080/".passed
+When User Should enter Username "admin" and Password "Bitnami.12345"........passed
+And User Should click on Login button.......................................passed
+Then User Should able to see the Homepage and validate login button.........passed
+Given Employee Should have FirstName "chandrasekhar" And LastName "kodekandla".passed
+When Employee Should Enter Login Credential as UserName "chandra" And Password "Bitnami.12345" And Repassword "Bitnami.12345".passed
+And User Should click on Save Button........................................passed
+Then User Should logout the application.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add Employee and Delete Same Employee" name="Delete the Employee in Employee list" time="30.054363">
+<system-out><![CDATA[Given OrangeHrm application Should launch with Chrome browser "chrome" and Url "http://orangehrm.simplifyqa.com:9080/".passed
+When User Should enter Username "admin" and Password "Bitnami.12345"........passed
+And User Should click on Login button.......................................passed
+Then User Should able to see the Homepage and validate login button.........passed
+Given User Should Search with "chandrasekhar kodekadnla"....................passed
+When User Should click on Delete Button.....................................passed
+Then User Should logout the application.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
